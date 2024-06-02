@@ -8,6 +8,7 @@ export default function Hero() {
       <Image
         src={heroImage}
         alt="hero-image"
+        placeholder="blur"
         className="object-cover h-full w-full"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-transparent via-transparent/50 to-transparent/80">

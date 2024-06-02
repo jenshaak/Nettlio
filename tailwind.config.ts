@@ -15,6 +15,19 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
-};
-export default config;
+  daisyui: {
+    themes: [
+      "light",
+      "dark",
+      {
+        corporate: {
+          ...require("daisyui/src/theming/themes")["corporate"],
+          primary: "5d5dff",
+        },
+      },
+    ],
+  },
+  plugins: [require("daisyui")],
+  } satisfies Config
+
+export default config
